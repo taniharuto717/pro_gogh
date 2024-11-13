@@ -26,12 +26,12 @@ app.register_error_handler(404, page_not_found)
 
 #langsmith設定
 from uuid import uuid4
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 unique_id = uuid4().hex[0:8]
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_PROJECT"] = f"Tracing Walkthrough - {unique_id}"
 os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = "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"
+os.environ["LANGCHAIN_API_KEY"] = ""
 
 #########    対話型鑑賞の処理内容    ######## 
 # 共通モデル設定
