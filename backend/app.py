@@ -19,7 +19,7 @@ from langchain.memory import ChatMessageHistory
 #flask/langchain
 def page_not_found(e):
   return render_template('404.html'), 404
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 app = Flask(__name__)
 CORS(app)
 app.register_error_handler(404, page_not_found)
